@@ -77,31 +77,51 @@ html,body{
 
 .card {
     width: 18rem;
-    padding: 5px;
     margin: 5px;
     margin-left:30px;
     margin-bottom: 15px;
     float: left;
-    background-color: #d1b3a1 !important;
 
 }
 
 .card-title{
-    color: #1b1717;
+    color: #eeebdd;
     font-size: 23px;
     text-align: center!important;
 }
 
+#titleDiv{
+    /* margin-top: 15px; */
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #810000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.card-body{
+    margin: 0px;
+    background-color: #d1b3a1 !important;
+    padding-right: 0px!important;
+    padding-left:0px!important;
+    padding-top:0px!important;
+
+
+}
 .card-text{
     color: #1b1717;
     font-size: 18px!important;
     text-align: center;
+    padding: 3px;
 }
+
+
 
 .card-btns{
     background-color: #1b1717 !important;
     color:#eeebdd !important;
-    margin:12px;
+    margin-left: 35px;
 
 }
 
@@ -113,3 +133,9 @@ html,body{
     color:green;
 }
 
+#bookId{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+}

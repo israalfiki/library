@@ -5,24 +5,6 @@ let myLibrary = [
         author:'Dostoevsky',
         noOfPages:400,
         isCompleted:false
-    },
-    {   id:Math.random(),
-        title:'Crime and Punishment',
-        author:'Dostoevsky',
-        noOfPages:400,
-        isCompleted:false
-    },
-    {   id:Math.random(),
-        title:'Crime and Punishment',
-        author:'Dostoevsky',
-        noOfPages:400,
-        isCompleted:false
-    },
-    {   id:Math.random(),
-        title:'Crime and Punishment',
-        author:'Dostoevsky',
-        noOfPages:400,
-        isCompleted:false
     }
 ];
 
@@ -49,9 +31,13 @@ function addBookToLibrary(){
     let author=document.getElementById('author').value
     let noOfPages=document.getElementById('pages-number').value
     let isCompleted=document.getElementById('completed').checked
-    let myBook = new Book(title,author,noOfPages,isCompleted)
-    myLibrary.push(myBook);
-    createBook(myBook)
+    if(title!==''&author!==''&noOfPages>=10){
+        let myBook = new Book(title,author,noOfPages,isCompleted)
+        myLibrary.push(myBook);
+        createBook(myBook);
+      
+    }
+ 
 
  
 }
@@ -69,6 +55,9 @@ function createBook(book){
         id.setAttribute('id', 'bookId')
 
         const title = document.createElement('h5')
+        const titleDiv = document.createElement('div')
+        titleDiv.setAttribute('id','titleDiv')
+        titleDiv.appendChild(title)
         title.classList.add('card-title')
         title.textContent = book.title
 
@@ -105,7 +94,7 @@ function createBook(book){
 
 
         cardBody.appendChild(id)
-        cardBody.appendChild(title)
+        cardBody.appendChild(titleDiv)
         cardBody.appendChild(author)
         cardBody.appendChild(noOfPages)
         cardBody.appendChild(isCompleted)
@@ -122,6 +111,22 @@ function createBook(book){
 
         const body = document.getElementsByClassName('col-9')[0]
         body.appendChild(card)
+
+        //to empty inputs
+        clearInputs()
+
+
+        
+
+
+}
+
+function clearInputs(){
+
+    document.getElementById('title').value=''
+    document.getElementById('author').value=''
+    document.getElementById('pages-number').value=10
+    document.getElementById('completed').checked=false
 
 }
 
