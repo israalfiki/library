@@ -1,0 +1,115 @@
+
+html,body{
+    margin: 0px;
+    height:100%;
+    width: 100%;
+    background-color: #eeebdd;
+
+}
+
+
+.row{
+    height: 100%;
+    /* width: 100%; */
+}
+
+.form{
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 15px;
+
+    
+}
+
+.form-label{
+    color: #eeebdd;
+}
+
+.library-head{
+    color: #eeebdd;
+    text-align: center;
+    margin: 20px;
+    margin-top:50px;
+    font-family: 'Cardo', serif;
+
+}
+
+#books-heading-div{
+    margin: 40px;
+    text-align: center;
+   
+
+}
+.books-heading{
+
+    font-family: 'Cardo', serif;
+    font-size: 50px;
+    font-weight:bold ;
+}
+.col-3{
+    background-color:#630000 ;
+
+
+}
+.col-9{
+    background-color: #eeebdd;
+    width: 100%;
+}
+
+.btn-add{
+    background-color: #1b1717 !important;
+    color:#eeebdd !important;
+}
+
+.form-control{
+    background-color: #eeebdd !important;
+}
+
+.form-check-input{
+    background-color: #eeebdd !important;  
+
+}
+
+.form-check-input:checked{
+    background-color: #1b1717 !important;  
+
+}
+
+.card {
+    width: 18rem;
+    padding: 5px;
+    margin: 5px;
+    margin-left:30px;
+    margin-bottom: 15px;
+    float: left;
+    background-color: #d1b3a1 !important;
+
+}
+
+.card-title{
+    color: #1b1717;
+    font-size: 23px;
+    text-align: center!important;
+}
+
+.card-text{
+    color: #1b1717;
+    font-size: 18px!important;
+    text-align: center;
+}
+
+.card-btns{
+    background-color: #1b1717 !important;
+    color:#eeebdd !important;
+    margin:12px;
+
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color:green;
+}
+
