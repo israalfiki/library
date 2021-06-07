@@ -63,7 +63,7 @@ function createBook(book){
 
         const author = document.createElement('h6')
         author.classList.add('card-text')
-        author.textContent = book.author
+        author.textContent = 'by ' +book.author
 
         const noOfPages = document.createElement('p')
         noOfPages.classList.add('card-text')
